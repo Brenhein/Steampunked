@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="OnHelp"
+        android:text="@string/how_to_play" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SplashImage"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:hint="@string/username"
+        android:background="@color/lightBeige"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/password"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:background="@color/lightBeige"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
+
+    <CheckBox
+        android:id="@+id/Remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:text="@string/remember"
+        android:layout_marginTop="5dp"
+        android:onClick="OnRememberMe" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Remember"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/createAcntBtn"
+        android:layout_alignRight="@id/createAcntBtn"
+        android:onClick="onLogin"
+        android:layout_marginTop="5dp"
+        android:text="@string/login"
+        android:layout_alignStart="@id/createAcntBtn"
+        android:layout_alignEnd="@id/createAcntBtn" />
+
+    <Button
+        android:id="@+id/createAcntBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCreateAccount"
+        android:layout_marginTop="5dp"
+        android:text="@string/AccCreate" />
+
+    <Button
+        android:id="@+id/SinglePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createAcntBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@id/createAcntBtn"
+        android:layout_alignLeft="@id/createAcntBtn"
+        android:layout_marginTop="5dp"
+        android:text="@string/singlePlayer"
+        android:onClick="OnMain"
+        android:layout_alignStart="@id/createAcntBtn"
+        android:layout_alignEnd="@id/createAcntBtn" />
+
+    <ImageView
+        android:id="@+id/SplashImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:contentDescription="@string/descri"
+        android:src="@drawable/splash" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Steampunked</string>
+    <string name="p1textbox">Enter Player 1\'s Name</string>
+    <string name="p2textbox">Enter Player 2\'s Name</string>
+    <string name="by5">5 by 5</string>
+    <string name="by10">10 by 10</string>
+    <string name="by20">20 by 20</string>
+    <string name="startButton">Start Game</string>
+    <string name="player_two_wins">Player Two Wins</string>
+    <string name="player_one_wins">Player One Wins</string>
+    <string name="installButton">Install</string>
+    <string name="discardButton">Discard</string>
+    <string name="openButton">Open Valve</string>
+    <string name="surrenderButton">Surrender</string>
+    <string name="replayButton">Start a new game </string>
+    <string name="winnerText">The winner is…\n</string>
+    <string name="desc">splash_screen</string>
+    <string name="gameOver">Game Over! </string>
+    <string name="descr">splash img </string>
+    <string name="move_not_valid">Invalid Move</string>
+    <string name="how_to_play">Game Instructions</string>
+    <string name="help">How To Play?</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="create">Create Game</string>
+    <string name="Join">Join Game</string>
+    <string name="login">Login</string>
+    <string name="createAct">Create Account</string>
+    <string name="AccCreate">Create Account</string>
+    <string name="descri">Description</string>
+    <string name="help_content">
+        \n \t\tInstructions: \n\n
+        \t\tWelcome to Steampunked!\n\n
+        \t\tThere is an area for five pipes that are available to the player.There are 3 sizes available for the playing area: 5x5, 10x10 and 20x20.\n
+        At the beginning of the game, each player has a valve (on the left) and a steam (on the right).\n
+        Your goal is to connect the source (valve) to the steam engine.\n\n
+        There are 5 buttons:\n
+        \t\t\t- Install: connect two pipes together\n
+        \t\t\t- Discard: the pipe section you were dragging is discarded and your turn ends. \n
+        \t\t\t- Open Valve: press this button to turn on the valve. If there is a leak in their pipe, you lose. If you have successfully connected the source to the destination, they win.\n
+        \t\t\t- Surrender: indicates that a player gives up. It should jump to a page that indicates the winner.\n
+
+        \n\n\n\t\tHappy Steampunking!
+
+    </string>
+    <string name="singlePlayer">Single Device</string>
+    <string name="remember">Remember Me</string>
+    <string name="waiting1">Currently waiting for </string>
+    <string name="waiting2"> to make a move…</string>
+    <string name="load_game_title">Join Game</string>
+    <string name="catalog_fail">Failed</string>
+    <string name="current_turn">Current Turn: </string>
+    <string name="exitGame">Exit Game</string>
+</resources>

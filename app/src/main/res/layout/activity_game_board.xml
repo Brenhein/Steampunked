@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".GameBoardActivity">
+
+    <edu.msu.harr1332.project1.SteampunkedView
+        android:id="@+id/steamPunkedView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/lightGreen">
+
+        <Button
+            android:id="@+id/buttonInstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="onInstall"
+            android:text="@string/installButton"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/buttonDiscard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buttonInstall"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/buttonInstall"
+            android:layout_toRightOf="@id/buttonInstall"
+            android:onClick="onDiscard"
+            android:text="@string/discardButton"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/buttonOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buttonDiscard"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/buttonDiscard"
+            android:layout_toRightOf="@id/buttonDiscard"
+            android:onClick="onOpen"
+            android:text="@string/openButton"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/buttonSurrender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buttonOpen"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/buttonOpen"
+            android:layout_toRightOf="@id/buttonOpen"
+            android:onClick="onSurrender"
+            android:text="@string/surrenderButton"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
